@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout06.html</title>
+    <style type="text/css">
+
+        #first{position:relative; width:100%; height:140px; background:lemonchiffon; margin-top:5px;}
+        .First{position:relative; width:400px; height:70px; margin:0 auto;}
+        #first_title{font-size:200%; font-weight: bold; line-height: 70px; text-align: center; background: #9bd96e; }
+        #first_text{font-size:80%; background:#84b95c;}
+
+        #second{position:relative; width:100%; height:600px; background: #ffcf74; margin:0 auto;}
+        .view{position:relative; width:1100px;height:600px; background:#aaff74; margin:0 auto;}
+
+        .sq{position:relative; float:left; width:350px;height:600px; background: skyblue; margin-right:25px;}
+        .sq:last-child{margin-right: 0;}/*rect*/
+
+        .picture{position:relative; overflow:hidden;}/*img*/
+        .textbox{position:absolute; width:300px;height:280px; background:white; float:left; box-shadow: 5px 5px 5px black; margin-top:-30px; margin-left: 25px;}/*box*/
+        .Title{position:relative;width:270px; height:100px; font-size:200%; font-weight:bold; line-height: 100px;
+        text-align: center; border:1px dashed black;margin-top:-30px; margin-left: 40px;}/*title*/
+        .Text{position:relative;width:270px; height:180px; font-size:80%; border:1px dashed black;margin-left: 40px; }/*text*/
+        .button{position:absolute; width:150px; height: 50px;background: blue; color:white;font-size: 150%;
+        font-weight: bold; line-height:50px; text-align: center; right:0; bottom:30px; }
+        
+    </style>
+</head>
+<body>
+    <div id="first">
+        <div id="first_title" class="First">Content07 Title</div>
+        <div id="first_text" class="First">국채를 모집하거나 예산외에 국가의 부담이 될 계약을 체결하려 할 때에는 정부는 미리 국회의 의결을 얻어야 한다. 대통령은 법률이 정하는 바에 의하여 사면·감형 또는 복권을 명할 수 있다.
+            </div>
+    </div>
+
+    <div id="second">
+        <div class="view">
+
+            <div class="sq">
+                <div class="picture"><img src="images/Penguins.jpg" height="300px"></div>
+               
+                <div class="textbox"></div>
+                    <div class="Title">Segment Title</div>
+                    <div class="Text">국채를 모집하거나 예산외에 국가의 부담이 될 계약을 체결하려 할 때에는 정부는 미리 국회의 의결을 얻어야 한다. 대통령은 법률이 정하는 바에 의하여 사면·감형 또는 복권을 명할 수 있다.
+                    </div>
+                <div class="button">BUTTON</div>
+               </div>
+            
+            <div class="sq">
+                <div class="picture"><img src="images/Lighthouse.jpg" height="300px"></div>
+                
+                <div class="textbox"></div>
+                <div class="Title">Segment Title</div>
+                    <div class="Text">국채를 모집하거나 예산외에 국가의 부담이 될 계약을 체결하려 할 때에는 정부는 미리 국회의 의결을 얻어야 한다. 대통령은 법률이 정하는 바에 의하여 사면·감형 또는 복권을 명할 수 있다.
+                    </div>
+                <div class="button">BUTTON</div>
+           </div>  
+
+            <div class="sq">
+                <div class="picture"><img src="images/Jellyfish.jpg" height="300px"></div>
+                  
+                <div class="textbox"></div>
+                    <div class="Title">Segment Title</div>
+                    <div class="Text">국채를 모집하거나 예산외에 국가의 부담이 될 계약을 체결하려 할 때에는 정부는 미리 국회의 의결을 얻어야 한다. 대통령은 법률이 정하는 바에 의하여 사면·감형 또는 복권을 명할 수 있다.
+                    </div>
+                <div class="button">BUTTON</div>
+           </div>
+    </div>
+</div>
+
+</body>
+</html>

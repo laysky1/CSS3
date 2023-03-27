@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout07.html</title>
+    <style type="text/css">
+        #first{position:relative; width:100%;height:140px; background:#b2ff8c; margin:0 auto;}
+        #first_title{position:relative; width:400px; height:70px; line-height: 70px; font-size:200%; font-weight: bold; text-align:center;background:#9bd96e; margin:0 auto;}
+        #first_text{position:relative; width:400px; height:70px;  font-size:80%; background: #84b95c; margin:0 auto;}
+
+        #second{position:relative; width:100%; height:600px; background:#fde0a3; margin:0 auto;}
+        
+        #view{position:relative; width:1200px; height:600px; background: white; margin:0 auto;}
+
+        .subView{position:relative; float:left; width:600px; height:600px;}
+        #view1{background: silver;}
+        #view2{background: yellowgreen;}
+       
+        .box{position:relative; width:600px; height:190px; background: white; margin-bottom:15px; }
+        .box:last-child{margin-bottom: 0;}
+
+        .left{position:relative; float:left; width: 400px; height: 190px; background: gray;}
+        .right{position:relative; width:190px; height: 190px; float:right;border-radius: 50%; overflow:hidden; }
+        .title{position:absolute; width:400px; height:50px;font-size:110%;font-weight:bold;text-align:right;background: gray; line-height: 50px; right:200px;}
+        .text{position:absolute; width:400px; height: 140px; background: gray; font-size: 80%;right:200px; top:50px;text-align: right; bottom:10px; float:top;}
+        #box2{position:relative; width:400px; height:600px; background: white; right:0; }
+       
+
+    </style>
+</head>
+<body>
+    
+    <div id="first">
+        <div id="first_title">Content08 Title</div>
+        <div id="first_text">민주평화통일자문회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다. 국가는 청원에 대하여 심사할 의무를 진다. 대통령은 조국의 평화적 통일을 위한 성실한 의무를 진다.</div>
+    </div>
+
+    <div id="second">
+        <div id="view">
+            <div id="view1" class="subView"><img src="images/Lighthouse.jpg"height="600px"></div>
+            
+            <div id="view2"class="subView">
+           
+            <div class="box">  
+                <div class="left"></div>
+                <div class="right"><img src="images/Koala.jpg"height="200px;"></div>
+                    <div class="title">Segement Title</div>
+                    <div class="text">민주평화통일자문회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다. 국가는 청원에 대하여 심사할 의무를 진다. 대통령은 조국의 평화적 통일을 위한 성실한 의무를 진다.</div>
+                   </div>
+            
+
+            <div class="box">  
+                <div class="left"></div>
+                <div class="right"><img src="images/Koala.jpg"height="200px;"></div>
+                    <div class="title">Segement Title</div>
+                    <div class="text">민주평화통일자문회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다. 국가는 청원에 대하여 심사할 의무를 진다. 대통령은 조국의 평화적 통일을 위한 성실한 의무를 진다.</div>
+                   </div>
+           
+
+            <div class="box">  
+                <div class="left"></div>
+                <div class="right"><img src="images/Jellyfish.jpg"height="200px;"></div>
+                <div class="title">Segement Title</div>
+                <div class="text">민주평화통일자문회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다. 국가는 청원에 대하여 심사할 의무를 진다. 대통령은 조국의 평화적 통일을 위한 성실한 의무를 진다.</div>
+                
+            </div>
+            </div>
+         </div>
+        </div>
+    </div>
+
+</body>
+</html>

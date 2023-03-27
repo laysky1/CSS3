@@ -1,0 +1,41 @@
+
+body{margin:0; }
+        #First{position:relative; width:100%; height:60px; border:1px solid silver;}
+
+        #box1{position:relative; width:1120px; height:60px; border:1px dashed red; margin:0 auto;}
+
+        #List{position:absolute; width:460px; height:60px; border: 1px dotted black;line-height: 60px; float:left;}
+        #List ul{list-style:none; margin: 0 auto; padding: 0;display:inline-block;}
+        #List li{float:left; margin-right: 20px; color: gray; }
+        #List li:nth-child(2){color: black;font-weight: bold; font-size: 110%;}
+
+        #login{position:absolute; width:460px;height:60px; border: 1px dotted black; line-height: 60px;
+        right:0; text-align:end; }
+
+        #Second{position:relative; width:100%; height:60px; ;border:1px solid silver;}
+        
+            #box2{position:relative; width:1120px; height:60px; border:1px dashed red; margin:0 auto;}
+
+        #List2{position:absolute; width:460px; height:60px; border: 1px dotted black;line-height: 60px; left:0;}
+        #List2 ul{list-style:none; margin: 0 auto; padding: 0;display:inline-block;}
+        #List2 li{float:left; text-align:center; padding:0 10px; font-size: 120%; font-weight: bold;font-family: Verdana;}
+
+        #login2{position:absolute; width:460px;height:60px; border: 1px dotted black; line-height: 60px;
+        right:0; text-align:end; font-weight: bold; }   
+        
+
+        #Third{position:relative; width:100%; height:570px; border:1px solid silver;}
+        #box3{position:relative; width:1240px; height:570px;
+        margin: 0 auto;}
+
+        #button1{position:relative; float:left; width:55px; height:55px; border: 1px solid black; border-radius: 50%; background-image: url(../images/ico_movie_171115.png); background-position:-60px -460px;overflow:hidden ; top:250px;}
+        #button2{position:relative; float:left; width:55px; height:55px; border: 1px solid black; border-radius: 50%; background-image: url(../images/ico_movie_171115.png); background-position:0px -460px;top:250px;}
+        img{vertical-align: middle;}
+
+        #newsbox{position: relative; width:1120px; height: 510px;background: #f5ffd2;margin:0 auto;}
+        .news{position: relative;width:275px;height:255px;border:1px solid red; margin-right: 4px; float:left }
+        .img{position:relative; width:275px; height:155px; border: 1px solid blue; border-radius: 15%; overflow: hidden;}
+        .text{position:relative; width:275px; height:100px; border: 1px solid blue;top:160px; font-weight: bold;  }
+        .news:nth-child(4n){margin-right:0;}
+
+        

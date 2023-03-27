@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout08.html</title>
+    <style type="text/css">
+        #back{width:100%; height:100%; background-color:#c1ecec; overflow-y:scroll;}
+       .box{position:relative;width:465px; height:55px;border:1px solid #ddeaea; margin:0 auto; text-align: center; line-height: 55px; margin-top:10px; margin-bottom:30px; float: left;}
+      
+       /*.subBox{position:relative;width:150px; height:55px;border:1px solid #ddeaea;  text-align: center; left:0; line-height:55px;margin-top:10px;}*/
+
+        #naver{position:relative; width:260px;height:60px;  margin:0 auto; margin-top:55px;}
+        #id{position:relative; width:465px; height:55px; margin-top:30px; font-size: 100%; font-weight: bold; border:1px; margin:0 auto; text-align: start; margin-top: 10px;margin-bottom:10px; }
+       
+        #psw{position:relative; width:465px; height:55px; margin-top:30px; font-size: 100%; font-weight: bold; border:1px; margin:0 auto; text-align: start; margin-top: 40px;}
+       
+        #birth{position:relative; width:465px; height:55px; margin-top:30px; font-size: 100%; font-weight: bold; border:1px; margin:0 auto; text-align: start; margin-top: 40px;}
+
+        #mf{position:relative; width:465px; height:55px; margin-top:30px; font-size: 100%; font-weight: bold; border:1px; margin:0 auto; text-align: start; margin-top: 40px;}
+
+        #email{position:relative; width:465px; height:55px; margin-top:30px; font-size: 100%; font-weight: bold; border:1px; margin:0 auto; text-align: start; margin-top: 40px;}
+
+        #phone{position:relative; width:465px; height:55px; margin-top:30px; font-size: 100%; font-weight: bold; border:1px; margin:0 auto; text-align: start; margin-top: 40px;}
+
+        #box1{position:relative;width:465px; height:55px;border:1px solid #ddeaea; margin:0 auto; text-align: center; line-height: 55px; margin-top:10px; margin-bottom:30px; float: left;}
+        #left{position:absolute;width:338px; height:55px;border:1px solid #ddeaea; margin:0 auto; text-align: center; line-height: 55px; margin-top:10px; margin-bottom:30px; float: left;}
+        #right{position:absolute; width:110px; height:55px; margin:0 auto; margin-left:17px; right:0;}
+    </style>
+</head>
+<body>
+    <div id="back"></div>
+    <div id="naver"><img src="images/naver.png"width="260px;"></div>
+
+    <div id="id">
+        아이디<br/> 
+        <div class="box">
+        <input type="text"size="40%" >@naver.com 
+        </div>
+   </div>
+
+   <div id="psw">
+        비밀번호<br/> 
+        <div class="box">
+        <input type="password"size="50%" line-height="100%;" ><img src="images/key_new.png" >
+    </div>
+    </div>
+
+    <div id="psw">
+        비밀번호 재확인<br/> 
+        <div class="box">
+        <input type="password"size="50%" ><img src="images/key2.png" >
+        </div>
+    </div>
+    
+    <div id="psw">
+        이름<br/> 
+        <div class="box">
+        <input type="text"size="50%" >
+        </div>
+    </div>
+
+    <div id="birth">
+        생년월일<br/>
+        <div class="box">
+            <input type="text"placeholder="년(4자)"size="10%">
+       
+       <select name="m">
+        <option>1월</option> <option>2월</option>
+        <option>3월</option> <option>4월</option>
+        <option>5월</option> <option>6월</option>
+        <option>7월</option> <option>8월</option>
+        <option>9월</option> <option>10월</option>
+        <option>11월</option> <option>12월</option>
+       </select>
+
+       <input type="text"size="10%">
+
+    </div>
+    </div>
+
+    <div id="mf">
+        성별<br/>
+        <div class="box">
+            <select name="mf1">
+                <option>성별</option>   <option>남자</option>
+                <option>여자</option>   <option>선택 안함</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="email">
+        본인 확인 이메일(선택)<br/> 
+        <div class="box">
+        <input type="text"placeholder="선택입력"size="50%" >
+        </div>
+    </div>
+    
+
+    <div id="phone">
+        휴대전화<br/> 
+        <div class="box">
+        <select name="phone">
+            <option>대한민국 +82</option>
+            <option>일본 +81</option>
+            <option>뉴질랜드 +64</option>
+            <option>가나 +233</option>
+        </select>
+
+        <div id="box1">
+            <div id="left">
+            <input type="text"placeholder="전화번호 입력"size="30%">
+            </div>
+            <div id="right">
+                <div id="button">인증번호 받기</div>
+
+            </div>
+            
+        </div>
+
+</body>
+</html>

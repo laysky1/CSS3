@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout04.html</title>
+    <style type="text/css">
+        .main{position:relative;height:200px;width:100%}
+        #first{background: #DDDDDD;}
+        #first_title{position:relative; width:350px; height: 100px; font-size: 190%; font-weight:bold;
+            line-height:100px; border:1px solid blue; margin:0 auto; text-align: center;}
+        #first_text{position:relative; width:350px; height: 100px; font-size:70%; border:1px solid blue;margin:0 auto;}    
+
+        #second{background:lemonchiffon;}
+        #view{position:relative; height:200px; width:1100px; background:yellow; margin:0 auto;}
+        .ib{position:absolute;width:200px; height:200px; border:1px solid yellow; border-radius: 50%;}
+        #ib1{background-image: url("images/1.jpg");background-size:100%;}
+        #b1{position:absolute; width:100px; height:200px; background: yellow;left:200px;}
+        #ib2{background-image: url("images/2.jpg");background-size:100%;left:300px;}
+        #b2{position:absolute; width:100px; height:200px; background: yellow;left:500px;}
+        #ib3{background-image: url("images/3.jpg");background-size:100%;left:600px;}
+        #b3{position:absolute; width:100px; height:200px; background: yellow;left:800px;}
+        #ib4{background-image: url("images/4.jpg");background-size:100%;left:900px;}
+
+        /*
+        .circle{position:relative; float:left; width:100px; height:200px; border-radius: 50%;
+        background:white;overflow:hidden; margin-right:100px;}
+
+        .circle:last-child{margin-right:0px;}
+        */
+
+        
+        #third{background:rgb(194, 252, 79);}
+        #view2{position:relative;width:1100px; height:200px; margin:0 auto;}
+        #box1{position: relative; width:1100px; height:70px; background: skyblue; margin:0 auto;}
+        .title{position:absolute; width:200px; height:70px; background: rgb(89, 113, 223); font-size: 150%; color: white; font-weight: bold; line-height: 70px; text-align:center; margin:0 auto}    
+        #title1{left:0;}
+        #title2{left:300px;}
+        #title3{right:300px;}
+        #title4{right:0;}
+        #box2{position: relative; width:1100px; height:130px; background: rgb(245, 195, 204); margin:0 auto;}
+        .text{position:absolute; width:200px; height: 130px; font-size:70%; background: white;margin:0 auto; text-align: center;}
+        #text1{left:0;}
+        #text2{left:300px;}
+        #text3{right:300px;}
+        #text4{right:0;}
+    </style>
+</head>
+<body>
+    <div id="first" class="main">
+        <div id="first_title">Content Title01</div>
+        <div id="first_text">대통령은 법률에서 구체적으로 범위를 정하여 위임받은 사항과 법률을 집행하기 위하여 필요한 사항에 관하여 대통령령을 발할 수 있다. 군인 또는 군무원이 아닌 국민은 대한민국의 영역안에서는 중대한 군사상 기밀·초병·초소·유독음식물공급·포로·군용물에 관한 죄중 법률이 정한 경우와 비상계엄이 선포된 경우를 제외하고는 군사법원의 재판을 받지 아니한다.</div>
+    </div>
+
+    <div id="second" class="main">
+        <div id="view">
+        <div id="ib1" class="ib"></div>
+            <div id="b1" ></div>
+        <div id="ib2"class="ib"></div>
+            <div id="b2" ></div>
+        <div id="ib3"class="ib"></div>
+             <div id="b3"></div>
+        <div id="ib4"class="ib"></div>
+        </div>
+        <!--
+            <div class="circle"><img src="images/1.jpg" width="200"></div>
+            <div class="circle"><img src="images/2.jpg" width="200"></div>
+            <div class="circle"><img src="images/3.jpg" width="200"></div>
+            <div class="circle"><img src="images/4.jpg" width="200"></div>
+        -->
+    </div>
+
+    <div id="third" class="main">
+        <div id="view2">
+            <div id="box1">
+            <div id="title1" class="title">Segment Title</div>
+            <div id="title2" class="title">Segment Title</div>
+            <div id="title3" class="title">Segment Title</div>
+            <div id="title4" class="title">Segment Title</div>
+        </div>
+            <div id="box2">
+            <div id="text1" class="text">대통령은 국가의 원수이며, 외국에 대하여 국가를 대표한다. 법관이 중대한 심신상의 장해로 직무를 수행할 수 없을 때에는 법률이 정하는 바에 의하여 퇴직하게 할 수 있다.<br/><br/>
+            <img src="images/content01.jpg"></div>
+            <div id="text2" class="text">대통령은 국가의 원수이며, 외국에 대하여 국가를 대표한다. 법관이 중대한 심신상의 장해로 직무를 수행할 수 없을 때에는 법률이 정하는 바에 의하여 퇴직하게 할 수 있다.<br/><br/>
+                <img src="images/content01.jpg"></div>
+            <div id="text3" class="text">대통령은 국가의 원수이며, 외국에 대하여 국가를 대표한다. 법관이 중대한 심신상의 장해로 직무를 수행할 수 없을 때에는 법률이 정하는 바에 의하여 퇴직하게 할 수 있다.<br/><br/>
+                <img src="images/content01.jpg"></div>
+            <div id="text4" class="text">대통령은 국가의 원수이며, 외국에 대하여 국가를 대표한다. 법관이 중대한 심신상의 장해로 직무를 수행할 수 없을 때에는 법률이 정하는 바에 의하여 퇴직하게 할 수 있다.<br/><br/>
+                <img src="images/content01.jpg"></div>
+        </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
