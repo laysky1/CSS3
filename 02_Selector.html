@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<!--
+    *CSS 선택자 (Selector) 기본
+    - 특정한 HTML 태그 또는 ID 또는 CLASS를 선택할 때 사용하는 기능
+    - 선택된 해당 태그에 우리가 원하는 스타일 또는 기능을 적용할 수 있다.
+-->
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02_Selector.html</title>
+    <style type="text/css">
+        /* Tag Selector : Tag 이름을 사용해서 스타일을 지정합니다. 하나의 태그이름을 사용하며 그 이름의 태그에 모두 적용합니다. Tag Selector는 앞에 #이나, 등을 붙이지 않고 이름만으로 선택이 가능합니다.*/
+        h1{color :#FF0000; } /*color : 글자색*/
+        h3{color :#0000FF; }
+        P {background: yellow ;}
+        h1,h3{background: silver;}/* 두개의 태그에 같은 스타일을 지정할 시 이처럼 컴마로 구분하여 지정합니다.*/
+        img{ height: 50px; vertical-align: middle; border: 1px solid black;}
+        /*
+        vertical-allign : 이미지와 글자간의 수평 맞춤 속성
+        top: 위쪽 맞춤  bottom : 아래쪽 맞춤    middle : 중간맞춤
+        */
+    </style>
+</head>
+<body>
+    <h1>CSS Selector Basic</h1>
+    <h3>간세네 관련 포스팅 : 한글 Lorem Ipsum 생성기</h3>
+    <p>행정권은 대통령을 수반으로 하는 정부에 속한다. 대통령의 임기연장 또는 중임변경을 위한 헌법개정은 그 헌법개정 제안 당시의 대통령에 대하여는 효력이 없다. 제2항과 제3항의 처분에 대하여는 법원에 제소할 수 없다. 대통령후보자가 1인일 때에는 그 득표수가 선거권자 총수의 3분의 1 이상이 아니면 대통령으로 당선될 수 없다.</p><br/>
+    <h1>★ 각 포털 사이트 로고</h1>
+    다음 <img src="images/daumlogo.png">&nbsp;&nbsp;&nbsp;&nbsp;
+    네이버 <img src="images/naver.png">&nbsp;&nbsp;&nbsp;&nbsp;
+    네이트 <img src="images/nate.png">&nbsp;&nbsp;&nbsp;&nbsp;
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>15_PseudoClass2.html</title>
+    <style type="text/css">
+        li>a:first-child{color:red;}
+        /* li>a는 모든 li 안의 a태그를 가리킵니다.그들을 대상으로 할때 모든 li안에는 a가 모두 존재하므로 li>a:first-child는 모든 li안의  a태그들의 첫번째를 가리키게 됩니다. 따라서 모두 빨간색 표시  */
+       li:first-child>a{color:blue;}
+       /*li중 첫번째, 그리고 그 안의 a태그이므로 첫번째만 파란색으로 표시*/
+    </style>
+</head>
+<body>
+    <li><a href="#">PsuedoClass</a></li>
+    <li><a href="#">PsuedoClass</a></li>
+    <li><a href="#">PsuedoClass</a></li>
+    <li><a href="#">PsuedoClass</a></li>
+    <li><a href="#">PsuedoClass</a></li>
+    <li><a href="#">PsuedoClass</a></li>
+    <li><a href="#">PsuedoClass</a></li>
+    <li><a href="#">PsuedoClass</a></li>
+</body>
+</html>

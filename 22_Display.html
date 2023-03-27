@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>22_Display.html</title>
+    <style type="text/css">
+        .box{background-color:yellow; width: 300px; height: 100px; margin: 10px;}
+        #box1{display:none;} /*화면에서 사라집니다. & block 형식의 자리도 사라집니다. */
+        #box2{display:inline;} /*div->span 이 된것 처럼 표시됩니다. block형식이 inline 형식으로 바뀌며, width height가 적용되지 않아서 width:300px; height:100px;가 무용지물이 됩니다.*/
+        #box3{display:block;}/*display:block 원래 div가 block이므로 변화가 없습니다.*/
+        #box4{display:inline-block;}/*block에서 inline으로 바뀌지만, block형식에서 사용한 width,height만 살려내어 표시합니다*/
+    </style>
+</head>
+<body>
+    <span>Dummy</span>
+    <div id="box1"  class="box">
+        <span>교육의 자주성,전문성,정치적 중립성 및 대학의 자율성은 법률이 정하는 바</span></div>
+    <span>Dummy</span><br/><br/>
+
+    <span>Dummy</span>
+    <div id="box2"  class="box">
+        <span>교육의 자주성,전문성,정치적 중립성 및 대학의 자율성은 법률이 정하는 바</span></div>
+    <span>Dummy</span><br/><br/>
+
+    <span>Dummy</span>
+    <div id="box3"  class="box">
+        <span>교육의 자주성,전문성,정치적 중립성 및 대학의 자율성은 법률이 정하는 바</span></div>
+    <span>Dummy</span><br/><br/>
+
+    <span>Dummy</span>
+    <div id="box4"  class="box">
+        <span>교육의 자주성,전문성,정치적 중립성 및 대학의 자율성은 법률이 정하는 바</span></div>
+    <span>Dummy</span><br/><br/>
+
+</body>
+</html>

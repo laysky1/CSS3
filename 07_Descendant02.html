@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>07_Descendant02.html</title>
+    <style type="text/css">
+        /* 후손선택자 사용시 ''공백을 사용하면 지목된 선택자 안의 모든 후손선택자가 선택되지만, '>'를 사용하면 바로 아래 후손 선택자만 선택됩니다.*/
+        #header>h2{ background: orange; color: red; }
+        #section>h1{ background:aqua; color:mediumpurple;}
+        #nav>h2 { background: yellowgreen; color:blue;}
+        #header>#nav>h1 { background: plum; color: pink;}
+
+        table>tbody>tr>td{color:orange;}
+        table>tbody>tr>th{color:red;}
+        
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1 class="title">회사이름/로고</h1>
+        <h2>회사이름/로고</h2>
+        <div id="nav">
+            <h1>#header>#nav>h1</h1><h2>header 2</h2><h3>CSS3</h3>
+        </div>
+        <h1>#header>h1</h1>
+        <h2>#header>h2</h2>
+    </div>
+    <div id="section">
+        <h1 class="title">Aside</h1>
+        <p>공무원은 국민전체에 대한 봉사자이며, 국민에 대하여 책임을 진다. 국가안전보장에 관련되는 대외정책·군사정책과 국내정책의 수립에 관하여 국무회의의 심의에 앞서 대통령의 자문에 응하기 위하여 국가안전보장회의를 둔다. 헌법에 의하여 체결·공포된 조약과 일반적으로 승인된 국제법규는 국내법과 같은 효력을 가진다.</p>
+    </div>
+
+    <table border="1" width="300">
+        <tr>
+            <th>이름</th>
+            <th>주소</th>
+        </tr>
+        <tr>
+            <td>홍길동</td>
+            <td>서울시 종로구</td>
+        </tr>
+        <tr>
+            <td>이순신</td>
+            <td>서울시 강남구</td>
+        </tr>
+    </table>
+
+</body>
+</html>

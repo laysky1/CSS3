@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<!--
+*반응, 상태선택자
+    -입력 양식의 상태, 태그에 일어난 이벤트를 선택할때 사용하는 선택자.
+    -종류
+        . :enabled
+        . :disabled
+        . :focus
+        . :checked
+
+        . :hover ->마우스가 위로 올라온 상태
+        . :active -> 마우스로 클릭(누르고 떼지 않은)상태
+
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10_StateSelector.html</title>
+    <style type="text/css">
+        input:enabled{background: yellow;}
+        input:disabled{background: green;}
+        input:focus{background: pink;}
+    </style>
+</head>
+<body>
+    <h2>Enabled</h2>
+    <input type="text"/>
+    <h2>Disable</h2>
+    <input type="text" disabled/>
+
+</body>
+</html>

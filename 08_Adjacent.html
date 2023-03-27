@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>08_Adjacent.html</title>
+    <style type="text/css">
+        /* 인접 (adjacent) 선택자 - h1 태그의 바로 뒤에 위치하는 h2 태그의 color속성에
+        red 키워드를 적용한다. */
+        h1 + h2 {color :red;} /*후속선택이 아닌 같은 수준의 바로 다음에 위치한 태그 선택*/
+        /*형제(sibling)선택자 - h1 태그의 뒤에 위치하는h3 태그의 color 속성에 green 키워드를 적용한다.*/
+        h1~h3 {background: green;}
+    </style>
+
+</head>
+<body>
+    <h1>Header - 1</h1>
+    <h2>Header - 2</h2>
+    <h2>Header - 2</h2>
+    <h3>Header - 3</h3>
+    <h2>Header - 2</h2>
+    <h3>Header - 3</h3>
+</body>
+</html>

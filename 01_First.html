@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<!--
+* CSS(cascading style sheets)
+ - Tag 안에서 지정되던 옵션을 포함, 다양한 옵션과 꾸밈요소를 별도의 시트에 작성 후, 
+    name,id 등으로 연결적용하는 스타일 정의 구문입니다.
+
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01_First.html</title>
+    <style type="text/css">
+        #div2{ width:300px; height: 200px;background: green; margin:20px; }
+        #div3{ width:400px; height: 200px;background: red; margin:20px; }
+        #div5{ width:500px; height: 200px;background: yellowgreen; margin:20px; }
+        /*width : 가로크기, height : 세로크기, background:배경색,margin:바깥여백- 다른 태그와의 간격*/
+    </style>
+
+</head>
+<body>
+    
+    <!-- Tag에 스타일을 지정하는 방법 #1 : 태그 안에 style 속성을 추가하고 그 속성의 구성값들을 기술해서 지정합니다.-->
+    <div style="width:150px; height: 150px; background-color: #0A4EFA;"></div><br>
+    <!-- 
+    - 기존방식 : <div width="150" height="150"></div> 
+    -style 속성을 이용할때는 반드시 필드명과 value 가 (:) 으로 구분되어야 하며, value값이 크기를 지정하는 값이라면
+    반드시 단위(px)가 같이 쓰여야 합니다.    
+    - 여러 속성을 위해 (;)으로 구분하여 한꺼번에 스타일을 지정할 수 있습니다.
+    -->
+
+    <img src="images/hrd.png" style="width:100px; height:100px; border:1px solid black"/>
+    <img src="images/hrd.png" style="width:100px;height:100px;border:3px dashed red" />
+    <!--두개의 방식은 같은 속성을 똑같이 지정할 수 있으나 아래방식의 확장성 훨씬 좋습니다-->
+
+    <!-- 스타일을 지정하는 방법 #2 : 적용할 태그에 id 또는 class를 지정하고 그 이름 이용하여 별도의 공간에 스타일을 지정합니다.-->
+    
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4" style="width: 100px; height:100px; background:magenta; margin:20px;"></div>
+    <div id="div5"></div>
+
+    <!-- margin : 태그의 외곽, 바깥쪽 여백
+    margin:20px; : 좌우 상하 20px씩 마진을 설정합니다. -->
+
+</body>
+</html>
